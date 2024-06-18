@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Ahorcado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #word-container {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    #letters {
+      margin-top: 20px;
+    }
+    #attempts {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Juego de Ahorcado</h1>
+  <div id="word-container"></div>
+  <div id="letters"></div>
+  <div id="attempts">Intentos restantes: <span id="attempts-count">6</span></div>
+  <button onclick="resetGame()">Reiniciar Juego</button>
+
+  <script src="ahorcado.js"></script>
+</body>
+</html>
